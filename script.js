@@ -6589,6 +6589,8 @@ const colors = [
 ];
 
 
+getRandomColor();
+getRandomQuote();
 
 function getRandomColor() {
   const randomColor = colors[
