@@ -6598,8 +6598,7 @@ function getRandomColor() {
   ];
 
   // Your code below
-  let bodyColor = document.body;
-  // let textColor = document.body.textContent;
+  let bodyColor = document.querySelector('body');
   let buttonColor = document.getElementsByClassName('button');
 
    bodyColor.style.backgroundColor = randomColor;
@@ -6618,7 +6617,7 @@ function getRandomQuote() {
   let authorChange = document.getElementById('author');
 
   textChange.textContent = randomQuote.text;
-  authorChange.textContent = randomQuote.author;
+  authorChange.textContent = randomQuote.author || "Auteur anonyme";
   // Your code above
 }
 
